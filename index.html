@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List</h1>
+    <div class="theme-toggle">
+      <label><input type="checkbox" id="themeToggle" /> Dark Mode</label>
+    </div>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <select id="prioritySelect">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <input type="datetime-local" id="reminderTime" />
+      <button id="addBtn">Add</button>
+    </div>
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
